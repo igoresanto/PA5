@@ -1,0 +1,26 @@
+.TituloIndex{
+    font-size: 56px;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    color:#0000ff;
+}
+
+.AlinhamentoTabela{
+    text-align: center;
+    color:#999;
+    font-weight: bold;
+}
+
+.ExcluirPaciente{
+    font-size: 36px;
+    font-family: Arial;
+    font-weight: bold;
+    color:#ff3333;    
+}
+
+.ExcluirPacienteSelecao{
+    font-size: 36px;
+    font-family: Arial;
+    font-weight: bold;
+    color:#000;    
+}
