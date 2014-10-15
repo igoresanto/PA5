@@ -7,7 +7,7 @@
     <ui:decorate template="index.xhtml">
         <ui:define name="centro">
             <h:form>
-                <p:dataTable value="#{contatoController.listaContatos}" var="lista">
+                <p:dataTable value="#{pacienteController.listaPacientes}" var="lista">
                     
                     <p:column headerText="ID" styleClass="AlinhamentoTabela">
                         <p:outputLabel value="#{lista.id}"/>
@@ -42,13 +42,13 @@
                     </p:column>
                     
                     <p:column headerText="*" style="text-align: center" resizable="false" width="40">
-                        <p:commandLink action="editarcontato" actionListener="#{contatoController.selecionarContato()}">
+                        <p:commandLink action="editarpaciente" actionListener="#{pacienteController.selecionarPaciente()}">
                             <p:graphicImage value="/imagens/editar.png" width="36" height="36"/>                                                        
                         </p:commandLink>
                     </p:column>
                     
                      <p:column headerText="*" style="text-align: center" resizable="false" width="40">
-                        <p:commandLink action="excluircontato" actionListener="#{contatoController.selecionarContato()}">
+                        <p:commandLink action="excluirpaciente" actionListener="#{pacienteController.selecionarPaciente()}">
                             <p:graphicImage value="/imagens/excluir.png" width="36" height="36"/>                                                        
                         </p:commandLink>
                     </p:column>
