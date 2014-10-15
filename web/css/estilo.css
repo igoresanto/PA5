@@ -1,8 +1,9 @@
 .TituloIndex{
-    font-size: 56px;
-    font-family: Comic Sans MS;
+    font-size: 10px;
+    font-family: Arial;
     font-weight: bold;
     color:#0000ff;
+    letter-spacing: 3px;
 }
 
 .AlinhamentoTabela{

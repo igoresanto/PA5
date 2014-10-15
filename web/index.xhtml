@@ -12,25 +12,38 @@
         <p:layout fullPage="true">
             <p:layoutUnit position="west" size="245">
                 <h:form>
-                    <p:menu>
+                    <p:menu toggleable="true">
                         <p:submenu label="Pacientes">
-                            <p:menuitem value = "Novo Paciente" action="novocontato" actionListener="#{contatoController.novoContato()}"/>
-                            <p:menuitem value = "Listar Pacientes" action="listarcontatos" />
+                            <p:menuitem value = "Novo Paciente" action="novopaciente" actionListener="#{pacienteController.novoPaciente()}"/>
+                            <p:menuitem value = "Listar Pacientes" action="listarpacientes" />
                         </p:submenu>
                     </p:menu>
+
+                    <p:menu toggleable="true">
+                        <p:submenu label="Médicos">
+                            <p:menuitem value = "Novo Médico" action="novomedico" actionListener="#{medicoController.novoMedico()}"/>
+                            <p:menuitem value = "Listar Médicos" action="listarmedicos" />
+                        </p:submenu>
+                    </p:menu>
+
                 </h:form>
             </p:layoutUnit>
-            
+
             <p:layoutUnit position="center">
                 <ui:insert name="centro">
                     <center>
-                        <p:outputLabel value="AGENDA DE PACIENTES" styleClass="TituloIndex"/>
+                        <p:outputLabel value="SISTEMA DE AGENDA CLÍNICA" styleClass="TituloIndex"/>                        
                     </center>
+
+                    <center>                        
+                        <p:graphicImage value="/imagens/logo_sacli.png" width="560" height="400"/>                                                        
+                    </center>
+
                 </ui:insert>
             </p:layoutUnit>
-            
+
         </p:layout>
-        
+
     </h:body>
 </html>
 

@@ -12,7 +12,7 @@ public class teste {
     public static void main(String[] args) {
         try {
             Conexao Con = new Conexao();
-            PreparedStatement stm = Con.getConnection().prepareStatement("select * from contato");
+            PreparedStatement stm = Con.getConnection().prepareStatement("select * from paciente");
             ResultSet rs = stm.executeQuery();
             rs.next();
             System.out.println(rs.getString("nome"));
