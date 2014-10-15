@@ -1,0 +1,17 @@
+Galera buenos dias, fiz uma modificação enorme nas classes no qual disponibilizamos no github.com, tinhamos classes como nome de contato, metodos e atributos também com este nome, agora são todos pacientes, aproveitando a oportunidade, também criei o CRUD MEDICO, inseri um logotipo SACLI, criei uma funcionalidade no menu, princpipal que exibe ou não o menu de preferência do usuário e irei postar as sql usadas para criacao do banco e das duas tabelas.
+
+Galera como dei um "UP" na Aplicação, vou pedir alguns favores conforme listados abaixo:
+
+Peço tanto para o pessoal que nos auxilia em escrita como os Desenvolvedores que baixem lá no github.com, a nova versão para que coloquem no desktop ou notebook de vocês para que assim possam me ajudar a acelerar os processos de desenvolvimento e documentação.
+
+Galera da documentação:
+  - Mônica vai criar os pontos de Função (combinado)
+  - Icaro,Thiago e Vanderlei poderiam transcrever as funcionalidades já em funcionamento como requisitos funcionais e não funcionais, assim como os casos de uso, diagramas de atividades
+
+ DER, Diagrama de Classes : Igor e Gilbert, favor definir entre vocês dois
+
+ Classes de Testes : Igor vai fazer
+
+ Gilbert poderia estudar a aplicação e ver a possibilidade de implementar as classes que irão fazer a marcação de consultas.
+
+No mais agradeço o empenho de todos os comprometidos no projeto SACLI e fiquem com Diós.
