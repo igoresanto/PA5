@@ -13,40 +13,40 @@
                         <p:growl id="growl"/>
                         <h:panelGrid columns="3" id="grid">
                             <p:outputLabel value="NOME: "/>
-                            <p:inputText id = "nome" value="#{pacienteController.pacienteB.nome}" required="true" requiredMessage="O campo NOME deve ser preenchido"/>
+                            <p:inputText id = "nome" value="#{contatoController.contatoB.nome}" required="true" requiredMessage="O campo NOME deve ser preenchido"/>
                             <p:message for="nome" />
 
                             <p:outputLabel value="ENDEREÇO: "/>
-                            <p:inputText id = "endereco" value="#{pacienteController.pacienteB.endereco}" required="true" requiredMessage="O campo ENDEREÇO deve ser preenchido"/>
+                            <p:inputText id = "endereco" value="#{contatoController.contatoB.endereco}" required="true" requiredMessage="O campo ENDEREÇO deve ser preenchido"/>
                             <p:message for="endereco" />
 
                             <p:outputLabel value="CIDADE: "/>
-                            <p:inputText id = "cidade" value="#{pacienteController.pacienteB.cidade}" required="true" requiredMessage="O campo CIDADE deve ser preenchido"/>
+                            <p:inputText id = "cidade" value="#{contatoController.contatoB.cidade}" required="true" requiredMessage="O campo CIDADE deve ser preenchido"/>
                             <p:message for="cidade" />              
 
                             <p:outputLabel value="UF: "/>
-                            <p:selectOneMenu id="uf" value="#{pacienteController.pacienteB.uf}" required="true" requiredMessage="O campo UF deve ser preenchido">
+                            <p:selectOneMenu id="uf" value="#{contatoController.contatoB.uf}" required="true" requiredMessage="O campo UF deve ser preenchido">
                                 <f:selectItem itemLabel="MG" itemValue="MG"/>
                             </p:selectOneMenu>
                             <p:message for="uf" />                           
 
                             <p:outputLabel value="TELEFONE: "/>
-                            <p:inputMask id = "telefone" mask="(99) 9999-9999" value="#{pacienteController.pacienteB.telefone}" 
+                            <p:inputMask id = "telefone" mask="(99) 9999-9999" value="#{contatoController.contatoB.telefone}" 
                                          required="true" requiredMessage="O campo TELEFONE deve ser preenchido" />
                             <p:message for="telefone" />
 
                             <p:outputLabel value="CELULAR: "/>
-                            <p:inputMask id = "celular" mask="(99) 9999-9999" value="#{pacienteController.pacienteB.celular}" />
+                            <p:inputMask id = "celular" mask="(99) 9999-9999" value="#{contatoController.contatoB.celular}" />
                             <p:outputLabel value="*Opcional" />
 
                             <p:outputLabel value="EMAIL: "/>
-                            <p:inputText id = "email" value="#{pacienteController.pacienteB.email}" />
+                            <p:inputText id = "email" value="#{contatoController.contatoB.email}" />
                             <p:outputLabel value="*Opcional" />
 
                         </h:panelGrid>
 
                         <p:separator style="width: 80%; height: 3px"/>
-                        <p:commandButton id="salvar" value="Salvar" update="grid, growl" action="#{pacienteController.salvarPaciente()}"/>
+                        <p:commandButton id="salvar" value="Salvar" update="grid, growl" action="#{contatoController.salvarContato()}"/>
                         <p:commandButton id="limpar" value="Limpar" type="reset"/>
 
                     </h:form>

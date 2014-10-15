@@ -8,14 +8,14 @@
             <ui:define name="centro">
                 <h:form>
                     <center>
-                        <p:outputLabel value="Deseja realmente Excluir o Medico " styleClass="ExcluirMedico" />
-                        <p:outputLabel value="#{medicoController.medicoB.nome}" styleClass="ExcluirMedicoSelecao" />
-                        <p:outputLabel value=" ?" styleClass="ExcluirMedicoSelecao" /><br/>
+                        <p:outputLabel value="Deseja realmente Excluir o Paciente " styleClass="ExcluirPaciente" />
+                        <p:outputLabel value="#{contatoController.contatoB.nome}" styleClass="ExcluirPacienteSelecao" />
+                        <p:outputLabel value=" ?" styleClass="ExcluirPacienteSelecao" /><br/>
                         
                         <p:separator style="width: 80%; height: 5px" />
                         
-                        <p:commandButton value="Excluir" action="#{medicoController.excluirMedico()}"/>
-                        <p:commandButton value="Cancelar" action="listarmedicos"/>
+                        <p:commandButton value="Excluir" action="#{contatoController.excluirContato()}"/>
+                        <p:commandButton value="Cancelar" action="listarcontatos"/>
                     </center>
                 </h:form>
             </ui:define>

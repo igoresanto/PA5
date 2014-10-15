@@ -1,8 +1,7 @@
 package Bean;
 
-public class MedicoBean {
+public class ContatoBean {
     private int id;
-    private String crm;
     private String nome;
     private String endereco;
     private String cidade;
@@ -11,12 +10,11 @@ public class MedicoBean {
     private String celular;
     private String email;
 
-    public MedicoBean() {
+    public ContatoBean() {
     }
 
-    public MedicoBean(int id, String crm, String nome, String endereco, String cidade, String uf, String telefone, String celular, String email) {
+    public ContatoBean(int id, String nome, String endereco, String cidade, String uf, String telefone, String celular, String email) {
         this.id = id;
-        this.crm = crm;
         this.nome = nome;
         this.endereco = endereco;
         this.cidade = cidade;
@@ -32,14 +30,6 @@ public class MedicoBean {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getCrm() {
-        return crm;
-    }
-
-    public void setCrm(String crm) {
-        this.crm = crm;
     }
 
     public String getNome() {
