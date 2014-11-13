@@ -5,32 +5,49 @@
       xmlns:p="http://primefaces.org/ui"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <h:head>
-        <title>Agenda de Pacientes</title>
+        <title>SACLI - Sistema de Agendamento Clínico</title>
         <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
     </h:head>
     <h:body>
         <p:layout fullPage="true">
             <p:layoutUnit position="west" size="245">
                 <h:form>
-                    <p:menu>
+                    <p:menu toggleable="true">
                         <p:submenu label="Pacientes">
-                            <p:menuitem value = "Novo Paciente" action="novocontato" actionListener="#{contatoController.novoContato()}"/>
-                            <p:menuitem value = "Listar Pacientes" action="listarcontatos" />
+                            <p:menuitem value = "Novo Paciente" action="novopaciente" actionListener="#{pacienteController.novoPaciente()}"/>
+                            <p:menuitem value = "Listar Pacientes" action="listarpacientes" />
                         </p:submenu>
                     </p:menu>
+
+                    <p:menu toggleable="true">
+                        <p:submenu label="Médicos">
+                            <p:menuitem value = "Novo Médico" action="novomedico" actionListener="#{medicoController.novoMedico()}"/>
+                            <p:menuitem value = "Listar Médicos" action="listarmedicos" />
+                        </p:submenu>
+                    </p:menu>
+
+                    <p:menu toggleable="true">
+                        <p:submenu label="Consultas">
+                            <p:menuitem value = "Marcação" action="marcacao" actionListener="#"/>
+                            <p:menuitem value = "Listar Consultas" action="listarmarcacoes" />
+                        </p:submenu>
+                    </p:menu>
+
                 </h:form>
             </p:layoutUnit>
-            
+
             <p:layoutUnit position="center">
                 <ui:insert name="centro">
+
                     <center>
-                        <p:outputLabel value="AGENDA DE PACIENTES" styleClass="TituloIndex"/>
+                        <p:graphicImage value="/imagens/logo_sacli.png" width="560" height="400"/>                                                        
                     </center>
+
                 </ui:insert>
             </p:layoutUnit>
-            
+
         </p:layout>
-        
+
     </h:body>
 </html>
 
