@@ -3,11 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package DAO;
 
-package teste;
-
-import Bean.MedicoBean;
-import DAO.MedicoDAO;
+import Bean.PacienteBean;
 import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -21,30 +19,34 @@ import static org.junit.Assert.*;
  *
  * @author IGOR
  */
-public class TesteMedico {
-    
-    public TesteMedico() {
+public class PacienteDAOTest {
+
+    public PacienteDAOTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
- @Test
+
+    /**
+     * Test of salvarPaciente method, of class PacienteDAO.
+     */
+    @Test
     public void testSalvarPaciente() {
-        MedicoBean p = new MedicoBean();
-        MedicoDAO pdao = new MedicoDAO();
+        PacienteBean p = new PacienteBean();
+        PacienteDAO pdao = new PacienteDAO();
         p.setId(3);
         p.setNome("Astro");
         p.setEndereco("Rua dos Astrologos");
@@ -53,26 +55,27 @@ public class TesteMedico {
         p.setTelefone("3133443344");
         p.setCelular("3186863344");
         p.setEmail("astroboy@uai.com.br");
-        Assert.assertTrue(pdao.salvarMedico(p));
+        Assert.assertTrue(pdao.salvarPaciente(p));
     }
 
     @Test
     public void testlistarPaciente() {
-        MedicoDAO pdao = new MedicoDAO();
-        Assert.assertTrue(!pdao.listarMedico().isEmpty());
+        PacienteDAO pdao = new PacienteDAO();
+        Assert.assertTrue(!pdao.listarPaciente().isEmpty());
     }
 
     @Test
     public void testeditarPaciente() {
-        MedicoDAO pdao = new MedicoDAO();
-        List<MedicoBean> listapaciente = pdao.listarMedico();
-        Assert.assertTrue(pdao.editarMedico(listapaciente.get(listapaciente.size() - 1)));
+        PacienteDAO pdao = new PacienteDAO();
+        List<PacienteBean> listapaciente = pdao.listarPaciente();
+        Assert.assertTrue(pdao.editarPaciente(listapaciente.get(listapaciente.size() - 1)));
     }
 
     @Test
     public void testexcluirPaciente() {
-        MedicoDAO pdao = new MedicoDAO();
-        List<MedicoBean> listapaciente = pdao.listarMedico();
-        Assert.assertTrue(pdao.excluirMedico(listapaciente.get(listapaciente.size() - 1)));
+        PacienteDAO pdao = new PacienteDAO();
+        List<PacienteBean> listapaciente = pdao.listarPaciente();
+        Assert.assertTrue(pdao.excluirPaciente(listapaciente.get(listapaciente.size() - 1)));
     }
+
 }
